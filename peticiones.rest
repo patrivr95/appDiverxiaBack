@@ -1,0 +1,431 @@
+
+POST  http://localhost:3000/api/usuarios/resetPassword
+Content-Type: application/json
+
+{
+  "email": "silvascairon@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/terapeutas
+
+###
+GET http://localhost:3000/api/clientes
+
+###
+GET http://localhost:3000/api/clientes/citas/2
+
+###
+GET http://localhost:3000/api/terapias
+
+###
+GET http://localhost:3000/api/terapias/1
+
+###
+PUT http://localhost:3000/api/usuarios/updatePassword
+Content-Type: application/json
+
+{
+  "id_usuario": 8,
+  "newPassword": "atun"
+}
+
+###
+PUT http://localhost:3000/api/clientes/update/18
+Content-Type: application/json
+
+{
+    "nombre": "Antonio",
+    "apellidos": "Vivancos Juan",
+    "email": "pedro@gmail.com",
+    "telefono": "676688455"
+  
+}
+
+###
+DELETE http://localhost:3000/api/clientes/delete/8
+
+###
+DELETE  http://localhost:3000/api/clientes/citas/delete/8
+
+
+###
+POST http://localhost:3000/api/clientes/create
+Content-Type: application/json
+
+{
+    "username":"CristinaTorres", 
+    "password":"12345",
+    "nombre": "Cristina ",
+    "apellidos": "Torres ",
+    "email": "cristinaTorres@gmail.com",
+    "telefono": "666788460"
+}
+
+
+###
+POST http://localhost:3000/api/clientes/citas/create
+Content-Type: application/json
+
+{
+  "dia": "2023-04-13",
+  "id_terapeuta": 5,
+  "id_usuario": 5,
+  "id_tramo_horario_45": 4
+}
+
+
+###
+POST http://localhost:3000/api/terapeutas/createWorker
+Content-Type: application/json
+
+{
+  "username": "luciav",
+  "password": "1234",
+  "nombre": "Lucia",
+  "apellidos": "Martin",
+  "formacion": "Fisioterapia",
+  "experiencia": 3,
+  "telefono": "76637161",
+  "email": "luciamart@gmail.com",
+  "id_terapia": 6
+}
+
+###
+POST http://localhost:3000/api/citas/create
+Content-Type: application/json
+
+{
+  "dia": "2023-04-11",
+  "id_terapeuta": 5,
+  "id_usuario": 55,
+  "id_tramo_horario_45": 3
+}
+
+###
+DELETE http://localhost:3000/api/citas/delete/4
+
+###
+GET http://localhost:3000/api/citas
+
+
+###
+GET http://localhost:3000/api/clientes/getClient?email=pepitadolores@gmail.com
+
+###
+GET http://localhost:3000/api/clientes
+
+###
+GET http://localhost:3000/api/clientes/2
+
+###
+GET http://localhost:3000/api/clientes/getClientByEmail/pepitadolores@gmail.com
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-07-13",
+  "id_terapeuta": 5
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-04-18",
+  "id_terapeuta": 2
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-04-17",
+  "id_terapeuta": 3
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-07-14",
+  "id_terapeuta": 3
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "id_terapeuta": 4,
+  "dia": "2023-04-15"
+}
+
+###
+GET http://localhost:3000/api/terapeutas/terapuetas-y-terapia
+
+###
+GET http://localhost:3000/api/citas/8
+
+
+###
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+  "username": "Jose",
+  "password": "12345"
+}
+
+###
+POST http://localhost:3000/api/usuarios/register
+Content-Type: application/json
+
+{
+  "username": "Jose",
+  "password": "12345",
+  "nombre": "Maria Jose",
+  "apellidos": "Ruiz",
+  "email": "Rosa1@gmail.com",
+  "telefono": "54684434"
+}
+###
+
+POST  http://localhost:3000/api/usuarios/resetPassword
+Content-Type: application/json
+
+{
+  "email": "silvascairon@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/terapeutas
+
+###
+GET http://localhost:3000/api/clientes
+
+###
+GET http://localhost:3000/api/clientes/citas/2
+
+###
+GET http://localhost:3000/api/terapias
+
+###
+GET http://localhost:3000/api/terapias/1
+
+###
+PUT http://localhost:3000/api/usuarios/updatePassword
+Content-Type: application/json
+
+{
+  "id_usuario": 8,
+  "newPassword": "atun"
+}
+
+###
+PUT http://localhost:3000/api/clientes/update/18
+Content-Type: application/json
+
+{
+    "nombre": "Antonio",
+    "apellidos": "Vivancos Juan",
+    "email": "pedro@gmail.com",
+    "telefono": "676688455"
+  
+}
+
+###
+DELETE http://localhost:3000/api/clientes/delete/8
+
+###
+DELETE  http://localhost:3000/api/clientes/citas/delete/8
+
+
+###
+POST http://localhost:3000/api/clientes/create
+Content-Type: application/json
+
+{
+    "username":"CristinaTorres", 
+    "password":"12345",
+    "nombre": "Cristina ",
+    "apellidos": "Torres ",
+    "email": "cristinaTorres@gmail.com",
+    "telefono": "666788460"
+}
+
+###
+POST http://localhost:3000/api/clientes/citas/create
+Content-Type: application/json
+
+{
+  "dia": "2023-04-13",
+  "id_terapeuta": 5,
+  "id_usuario": 5,
+  "id_tramo_horario_45": 4
+}
+
+
+###
+POST http://localhost:3000/api/terapeutas/createWorker
+Content-Type: application/json
+
+{
+  "username": "testadrian",
+  "password": "12345",
+  "nombre": "test adrian",
+  "apellidos": "test almohalla",
+  "formacion": "Fisioterapia",
+  "experiencia": 3,
+  "telefono": "218347659",
+  "email": "adri27696@gmail.com",
+  "id_terapia": 6
+}
+
+###
+POST http://localhost:3000/api/citas/create
+Content-Type: application/json
+
+{
+  "dia": "2023-04-11",
+  "id_terapeuta": 5,
+  "id_usuario": 55,
+  "id_tramo_horario_45": 3
+}
+
+###
+DELETE http://localhost:3000/api/citas/delete/45
+
+###
+GET http://localhost:3000/api/citas
+
+
+###
+GET http://localhost:3000/api/clientes/getClient?email=patriciavadilloruiz@gmail.com
+
+###
+GET http://localhost:3000/api/clientes
+
+###
+GET http://localhost:3000/api/clientes/2
+
+###
+GET http://localhost:3000/api/clientes/getClientByEmail/patriciavadilloruiz@gmail.com
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-07-13",
+  "id_terapeuta": 5
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-04-18",
+  "id_terapeuta": 2
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-04-17",
+  "id_terapeuta": 3
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "dia": "2023-07-14",
+  "id_terapeuta": 3
+}
+
+###
+POST http://localhost:3000/api/horarios/hours
+Content-Type: application/json
+
+{
+  "id_terapeuta": 4,
+  "dia": "2023-04-15"
+}
+
+###
+GET http://localhost:3000/api/terapeutas/terapuetas-y-terapia
+
+###
+GET http://localhost:3000/api/citas/terapeuta/5
+
+###
+GET http://localhost:3000/api/citas/cliente/8
+
+###
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+  "username": "adriantest",
+  "password": "12345"
+}
+
+###
+POST http://localhost:3000/api/usuarios/register
+Content-Type: application/json
+
+{
+  "username": "adriantest",
+  "password": "12345",
+  "nombre": "Adrian Test",
+  "apellidos": "Almohalla Test",
+  "email": "almohallabautista@gmail.com",
+  "telefono": "12345"
+}
+
+###
+GET http://localhost:3000/api/terapeutas/28
+
+###
+GET http://localhost:3000/api/clientes/8
+
+###
+PUT http://localhost:3000/api/clientes/updated/ceci@gmail.com
+Content-Type: application/json
+
+{
+  "username": "cecilia95",
+  "password": "12344",
+  "nombre": "Cecilia",
+  "apellidos": "Torán Sánchez",
+  "telefono": "683600000",
+  "email": "ceci@gmail.com"
+  
+}
+
+###
+DELETE http://localhost:3000/api/citas/deleteEmail/34
+
+###
+POST http://localhost:3000/api/clientes/create
+Content-Type: application/json
+
+{
+    "nombre": "Cristina",
+    "apellidos": "Torres",
+    "email": "mecagoentodo@gmail.com",
+    "telefono": "666788460"
+}
+
+###
+DELETE http://localhost:3000/api/terapeutas/delete/10
